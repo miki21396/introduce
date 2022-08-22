@@ -1,0 +1,216 @@
+/* header */
+
+header{
+    /* border: 10px; */
+    background-color: cornflowerblue;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: space-between;
+    display: flex;
+    padding: 20px 30px;
+}
+
+.header-left{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+p{
+     margin-top: 10px;
+}
+
+/* key visual */
+
+.kv{
+    align-items: center;
+}
+
+.changekv{
+    position: relative;
+    width : 750px;
+    height : 563px;
+    border : 1px solid;
+    margin: 50px auto;
+}
+
+.changekv img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: changekv 10s infinite;
+    opacity: 0;
+}
+
+@keyframes changekv{
+    0%{ opacity: 0;}
+    10%{ opacity: 1;}
+    20%{ opacity: 1;}
+    30%{ opacity: 0;}
+    100%{ opacity: 0;}
+}
+
+.changekv img:nth-of-type(1) {
+     animation-delay: 0s;
+}
+.changekv img:nth-of-type(2) {
+   animation-delay: 2s;
+}
+.changekv img:nth-of-type(3) {
+    animation-delay: 4s;
+}
+/* .changekv img:nth-of-type(4) {
+    animation-delay: 6s;
+}
+.changekv img:nth-of-type(5) {
+    animation-delay: 8s;
+} */
+</style>
+
+
+
+.kv{
+    text-align: center;
+    display: flex;
+    margin: 50px;
+}
+
+/* history */
+
+.st{
+    padding: 0px 30px;
+    margin: 20px 40px;
+    text-align: left;
+}
+
+.subtitle{
+    padding: 3px 2rem;
+    border-left: 3px solid #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.one{
+    width: 1400px;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.container{
+    /* background-position: center; 背景画像の位置を変更 */
+    /* background-size: cover; 背景画像のサイズ変更*/
+    /* height: 100vh;
+    width: 600px; */
+
+    justify-content: space-between;
+}
+
+.discription{
+    display: flex;
+    width: 280px;
+    align-items: center;
+}
+
+/* introduce */
+
+.profile{
+    display: flex;
+    margin: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.ash{
+    margin-left: 50px;
+    margin-top: 35px;
+}
+
+/* form */
+
+.formm{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    text-align: center;
+}
+
+
+input{
+    border: 1px solid lightgray;
+    margin: 6px;
+
+}
+
+textarea{
+    border: 1px solid lightgray;
+}
+
+.form3{
+    width: 280px;
+    height: 150px; 
+}
+
+.pochi{
+    width: 50px;
+    height: 40px;
+    text-align: center;
+}
+
+/* footer */
+
+span{
+    background-color: cornflowerblue;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    padding: 20px 30px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+    header{
+        width: 100%;
+    }
+    
+    .changekv{
+        width: 300px;
+        height: 225px;
+    }
+
+    .changekv img{
+        width: 300px;
+        height: 225px;
+    }
+
+    .st{
+        margin: 20px 0;
+    }
+
+    .container{
+        text-align: center;
+    }
+
+    .profile{
+        display: block;
+    }
+
+    .coro{
+        size: 10px;
+    }
+
+    .ash{
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .one{
+        display: block;
+        width: 90%;
+    }
+
+    .discription{
+        margin: 15px;
+        font-size: 12px;
+    }
+}
+
